@@ -1,0 +1,17 @@
+NAME - mvc2_db
+
+CREATE TABLE games (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    gamename VARCHAR(255) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    price VARCHAR(100) NOT NULL,
+    description VARCHAR(1000) NOT NULL,
+    image VARCHAR(255)
+);
+
+INSERT INTO `games` (`id`, `gamename`, `author`, `price`, `description`, `image`) VALUES
+(1, 'dark souls 3', 'babadzaki', '17.19$', 'it sucks', 'Dark_souls_3_cover_art.jpg'),
+(2, 'doom eternal', 'ID software', '27.65$', 'its awesome', 'Cover_Art_of_Doom_Eternal.png'),
+(3, 'witcher 3', 'CD project red', '35.35$', 'overhyped ass', 'Witcher_3_cover_art.jpg'),
+(4, 'Super Mario Odyssey', 'John Nintendo', '37.60$', 'hello mario', 'Super_Mario_Odyssey.jpg'),
+(5, 'Zelda Breath of the Wild', 'John Nintendo 2', '32.12$', 'its awesome', 'The_Legend_of_Zelda_Breath_of_the_Wild.jpg');
